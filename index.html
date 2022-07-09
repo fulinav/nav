@@ -21,13 +21,13 @@
         }
         return "";
     }
-    var url="https://www."+getQueryVariable("site")+"/nav";
+    var src="https://www."+getQueryVariable("site")+"/nav";
     try{
-        var iframe = document.createElement('<iframe name="'+url+'" id="mainContent" width="100%" height="100%" frameborder="0"></iframe>');
+        var iframe = document.createElement('<iframe src="'+src+'" id="mainContent" width="100%" height="100%" frameborder="0"></iframe>');
         document.body.innerHTML=iframe.outerHTML;
     }catch(e){
         var iframe = document.createElement('iframe');
-        iframe.name = url;
+        iframe.src = src;
         iframe.id="mainContent";
         iframe.width='100%';
         iframe.height='100%';
