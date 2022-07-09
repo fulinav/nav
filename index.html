@@ -2,11 +2,12 @@
 <html lang="zh_CN">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <style>
-        html,body{padding: 0;margin: 0;background: #272727;font: 400 16px/1.7 "Microsoft JhengHei", sans-serif;height: 100%;}
+        html,body{padding: 0;margin: 0;background: #272727;font: 400 16px/1.7 "Microsoft JhengHei", sans-serif;height: 100%;overflow: hidden;}
     </style>
 </head>
 <body>
@@ -21,7 +22,7 @@
         }
         return "";
     }
-    var src="https://nav.oungx.com/"+getQueryVariable("site");
+    var src="https://nav.oungx.com/"+getQueryVariable("s");
     try{
         var iframe = document.createElement('<iframe src="'+src+'" id="mainContent" width="100%" height="100%" frameborder="0"></iframe>');
         document.body.innerHTML=iframe.outerHTML;
